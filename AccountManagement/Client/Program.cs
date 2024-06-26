@@ -28,12 +28,12 @@ namespace Client
                     {
                         Console.WriteLine("Who is the Professor?");
 
-                        string plateNum = Console.ReadLine();
+                        string prof = Console.ReadLine();
 
 
                         Console.WriteLine("What is the Classroom?");
-                        string colorCar = Console.ReadLine();
-                        SqlDbData.AddUser(plateNum, colorCar);
+                        string roomNum = Console.ReadLine();
+                        SqlDbData.AddUser(prof, roomNum);
 
 
                         Console.WriteLine("Okay, heres the key to the room");
@@ -46,8 +46,8 @@ namespace Client
 
                         Console.WriteLine("Whos the Professor?");
 
-                        string plateNum = Console.ReadLine();
-                        SqlDbData.DeleteUser(plateNum);
+                        string prof = Console.ReadLine();
+                        SqlDbData.DeleteUser(prof);
 
 
                         Console.WriteLine("Okay, Give me the key");
